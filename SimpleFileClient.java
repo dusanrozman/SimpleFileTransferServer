@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SimpleFileClient {
 	
 	public final static int SOCKET_PORT = 20000; //port
-	public final static String SERVER = "192.168.2.10";
+	public final static String SERVER = "0.0.0.0"; //this must be changed to server's IP
 	public final static int FILE_SIZE = 60223860;
 	
     public static void main(String[] args) throws IOException 
