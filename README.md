@@ -17,5 +17,5 @@ Along with the simple commands such as pwd, cd, ls, etc. A use can do the follow
 
 The get/put commands convert the file to be transferred into binary and then using the TCP protocol transfer them to their destination. Tested formats that can be transferred include: .pdf, .mp3, .txt, .jpg, .exe
 
-# KnownBugs
+# Bugs
 If the user tries to 'put' a file that does not exist in the client side current directory, an empty file with the that name will still be created in the server side directory. For example, if client tries to do: 'put aFile.txt' but 'aFile.txt' does not exist in the client's current directory, 'aFile.txt' will still be created on the server side but will just be a blank file.  
