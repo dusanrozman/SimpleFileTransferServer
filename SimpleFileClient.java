@@ -4,13 +4,10 @@ import java.util.Scanner;
 
 public class SimpleFileClient {
 	
-	public final static int SOCKET_PORT = 20000; //whatever port
+	public final static int SOCKET_PORT = 20000; //port
 	public final static String SERVER = "192.168.2.10";
+	public final static int FILE_SIZE = 60223860;
 	
-	
-	public final static int FILE_SIZE = 60223860; //?
-	
-        
     public static void main(String[] args) throws IOException 
     {
         int bytesRead;
@@ -20,11 +17,10 @@ public class SimpleFileClient {
         Socket sock = null;
         
         //used in put
-		FileInputStream fis = null;
-	    BufferedInputStream bis = null;
-	    OutputStream os = null;
-	        
-        
+	FileInputStream fis = null;
+	BufferedInputStream bis = null;
+	OutputStream os = null;
+	    
         while(true)
         {
 	        try
@@ -93,15 +89,7 @@ public class SimpleFileClient {
 					catch(FileNotFoundException e)
 					{
 						System.out.println("That file does not exist in that directory. ");
-					}
-	        		
-	        		
-	        		
-	        		
-	        		
-	        		
-	        		
-	        		
+					}	
 	        	}
 	        	//if we're just writing something to console
 	        	else
